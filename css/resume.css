@@ -1,0 +1,329 @@
+body {
+  font-family: 'Open Sans', serif;
+  padding-top: 0px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+}
+
+.list-social-icons a {
+  color: #495057;
+}
+
+.list-social-icons a:hover {
+  color: #BD5D38;
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: top 0.5s; 
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+.resume-data{
+  min-width: 8rem;
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+
+  background-color: #BD5D38 !important;
+}
+
+.text-primary {
+  color: #BD5D38 !important;
+}
+
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+
+
+.arrow {
+  border: 2em solid transparent;
+  height: 0;
+  margin: 50vh auto;
+  width: 0;
+}
+
+.arrow.down {
+  border-bottom: none;
+  border-top-color: #e5e5e5;
+}
+.arrow.up {
+    border-bottom-color: #e5e5e5;
+    border-top: none;
+}
+/*** RADIAL PROGRESS ***/
+/* Circumference = 2πr */
+/* π = 3.1415926535898 */
+/* r = 35 */
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+  fill: #868e96;
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle;
+}
+
+/*** COLORS ***/
+/* Primary */
+
+svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+
+/* Secondary */
+
+svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
+
+/* Tertiary */
+
+svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
+
+/* Quaternary */
+
+svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
+
+/* Quinary */
+
+svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
+
+*, :before, :after { box-sizing: border-box; }
+
+.percentage{
+  color: #868e96;
+}
+.person-pic{
+  width: 152px; 
+  height: 152px; 
+  display: block; 
+  margin-right: auto;
+  margin-left: auto;
+  right: auto;
+  left: auto;
+  width: 100%
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.person-content{
+  margin-right: auto;
+  margin-left: auto;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+  width: 100%;
+  justify-content: center;
+}
+.person-name{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Merienda One', cursive;
+  color: white;
+}
+.person{
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.person-about{
+  font-size: 20px;
+  font-family: 'Cormorant Unicase', serif;
+  color: #efda9d;
+}
+.topp{
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+  position: relative;
+}
+.far{
+  font-size: 30px;
+  margin-right: 4px;
+  color: #efda9d;
+}
+.bg0s1s{
+  background-image: url("0s1s.png");
+  background-repeat: repeat-y;
+  background-color: rgba(145,13,13,.8);
+
+  background-blend-mode: multiply,darken, darken;
+}
+.golden{
+  background-color: 
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #efda9d;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    font-size: 36px;
+    font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+}
+/*.carousel-control-next-icon, .carousel-control-prev-icon {
+ 
+    background: #253e2b no-repeat center center;
+    color: black;
+    fill: rgb(0,234,0);
+}*/
+p {
+  color: #000000e0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+li{
+  color: #000000e0;
+   font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+.size{
+    font-size:28px;
+}
+.btn-info{
+  background-color: #bd5c38d4;
+  border-top-color:#bd5c38d4;
+  border-bottom-color: #bd5c38d4;
+  border-color: #bd5c38d4;
+}
+.btn-info:hover, .btn-info:not(:disabled):not(.disabled).active,  .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle,.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus, .btn-info:not(:disabled):not(.disabled):active:focus {
+    color: #fff;
+    background-color: #b7441a;
+    border-color: #b7441aeb;
+}
+ .btn-info.focus, .btn-info:focus{
+        box-shadow: 0 0 0 0.2rem #bd5c38d4;
+}
